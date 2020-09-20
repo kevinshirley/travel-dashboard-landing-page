@@ -1,0 +1,115 @@
+{
+  "alt": {
+    "autoTurboLogo": "Auto Turbo Logo",
+    "carBreakdown": "Car on the tow truck",
+    "towTruck": "Tow truck",
+    "receiveYourPayment": "Receive your payment",
+    "recycleYourCar": "Recycle your car",
+    "recycleForThePlanet": "Recycle for the planet",
+    "callUs": "Call us"
+  },
+  "common": {
+    "companyPhoneNumber": "514-900-6636",
+    "companyPhoneNumberHref": "tel:5149006636",
+    "viewDemo": "View Demo"
+  },
+  "meta": {
+    "title": "We can buy your used car | Auto Turbo",
+    "description": "Call us now, we can get you a free quote in under 10 minutes."
+  },
+  "footer": {
+    "link1": "How it works",
+    "link2": "Sell my car",
+    "link3": "Contact",
+    "mondayToFriday": "Monday to Friday",
+    "mondayToFridayHours": "07:00 - 21:00",
+    "saturdayToSunday": "Saturday to Sunday",
+    "saturdayToSundayHours": "07:00 - 18:00",
+    "copyright": "© {{ year }} Auto Turbo, All Rights Reserved."
+  },
+  "homeSection1": {
+    "title": "Manage your clients itineraries",
+    "listItem1": "Build interactive itineraries",
+    "listItem2": "Share itineraries with clients",
+    "listItem3": "Video conference with your team",
+    "listItem4": "and a lot more",
+    "ctaSubtitle": "Try to effectively build itineraries"
+  },
+  "homeSection2": {
+    "title": "Receive your money quickly",
+    "listItem1": "Accept the offer",
+    "listItem2": "We come to tow at no cost",
+    "listItem3": "Receive your payment immediately"
+  },
+  "homeSection3": {
+    "title": "A solution that comes to you",
+    "listItem1": "Accept the offer",
+    "listItem2": "We come to tow at no cost",
+    "listItem3": "Receive direct payment",
+    "cardCta": "Call us now",
+    "card1": {
+      "title": "Vehicle in any condition",
+      "description": "We take care of towing your damaged, rusty, mechanical problem vehicle, etc. Whatever the problem, we help you eliminate it by recycling your car for you at no cost. "
+    },
+    "card2": {
+      "title": "An unbeatable offer",
+      "description": "No need to move. Simply call us to receive an incomparable proposal for your vehicle, in a few minutes, with one of our agents."
+    },
+    "card3": {
+      "title": "Recycle your car",
+      "description": "We collect the vehicle parts to give a new life to the reusable elements. You contribute to the good of the planet by allowing us to reuse the parts of your used car."
+    }
+  },
+  "homeSection4": {
+    "offer1": {
+      "condition1": "Up to",
+      "amount": "1500$",
+      "condition2": "For your auto scrap",
+      "description": "The offer varies according to the current price of the metal, the weight and the condition of the vehicle."
+    },
+    "offer2": {
+      "condition1": "Up to",
+      "amount": "3000$",
+      "condition2": "For your used car",
+      "description": "The agent on the phone will be able to give you an offer, for your used vehicle, according to the information on the condition of the vehicle that you are going to provide to us."
+    }
+  },
+  "homeSection5": {
+    "step1": {
+      "title": "Contact",
+      "description": "Call us now. Simply provide us with the make of the vehicle, the model, the year, the condition of the vehicle and the reason you want to recycle the vehicle."
+    },
+    "step2": {
+      "title": "Collect",
+      "description": "As soon as you accept the offer from one of our agents, we can send one of our recyclers to your address to recycle the vehicle and to give you your payment."
+    }
+  },
+  "homeSection6": {
+    "title": "We can make a cash offer on your car only if:",
+    "kilometers": {
+      "text": "It has maximum",
+      "bold": "209 000 km or under"
+    },
+    "years": {
+      "text": "It has maximum",
+      "bold": "12 years old or under"
+    },
+    "and": "and"
+  },
+  "mobileMenu": {
+    "link1": "How it works",
+    "link2": "Sell my car",
+    "link3": "Contact"
+  },
+  "navigation": {
+    "link1": "How it works",
+    "link2": "Sell my car",
+    "link3": "Contact",
+    "howItWorksId": "how-it-works",
+    "howItWorksIdHash": "#how-it-works",
+    "sellMyCarId": "sell-my-car",
+    "sellMyCarIdHash": "#sell-my-car",
+    "contactId": "contact",
+    "contactIdHash": "#contact"
+  }
+}

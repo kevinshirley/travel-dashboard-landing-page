@@ -1,0 +1,114 @@
+{
+  "alt": {
+    "autoTurboLogo": "Auto Turbo Logo",
+    "carBreakdown": "Car on the tow truck",
+    "towTruck": "Tow truck",
+    "receiveYourPayment": "Receive your payment",
+    "recycleYourCar": "Recycle your car",
+    "recycleForThePlanet": "Recycle for the planet",
+    "callUs": "Appeler nous"
+  },
+  "common": {
+    "companyPhoneNumber": "514-900-6636",
+    "companyPhoneNumberHref": "tel:5149006636",
+    "viewDemo": "View Demo"
+  },
+  "meta": {
+    "title": "On achete votre vehicule | Auto Turbo",
+    "description": "Appelez-nous maintenant, nous pouvons vous obtenir un devis gratuit en moins de 10 minutes."
+  },
+  "footer": {
+    "link1": "Comment ca marche",
+    "link2": "Vendre mon auto",
+    "link3": "Contact",
+    "mondayToFriday": "Lundi au Vendredi",
+    "mondayToFridayHours": "07:00 - 21:00",
+    "saturdayToSunday": "Samedi au Dimanche",
+    "saturdayToSundayHours": "07:00 - 18:00",
+    "copyright": "© {{ year }} Auto Turbo, Tous Droits Réservés."
+  },
+  "homeSection1": {
+    "title": "On achète votre véhicule usagé",
+    "listItem1": "Paiement cash le jour même",
+    "listItem2": "Aucun frais de remorquage",
+    "listItem3": "Meilleure offre sur le marché",
+    "ctaSubtitle": "Appelez nous pour recevoir une offre"
+  },
+  "homeSection2": {
+    "title": "Recevez votre argent rapidement",
+    "listItem1": "Acceptez l'offre",
+    "listItem2": "Nous venons remorquer sans frais",
+    "listItem3": "Recevez le paiement direct"
+  },
+  "homeSection3": {
+    "title": "Une solution qui se déplace à vous",
+    "listItem1": "Acceptez l'offre",
+    "listItem2": "Nous venons remorquer sans frais",
+    "listItem3": "Recevez le paiement direct",
+    "cardCta": "Appeler nous maintenant",
+    "card1": {
+      "title": "Véhicule en tout état",
+      "description": "On s'occupe de venir remorquer votre véhicule accidenté, rouillé, avec problème de mécanique, etc. Quelque soit le problème, on vous aide à l'éliminer en venant recycler votre auto pour vous sans frais."
+    },
+    "card2": {
+      "title": "Une offre imbattable",
+      "description": "Plus besoin de vous déplacez. Simplement nous appeler pour recevoir une proposition incomparable pour votre véhicule, en quelques minutes, avec l'un de nos agent."
+    },
+    "card3": {
+      "title": "Recycle ton auto",
+      "description": "Nous récuperons les pièces du véhicule pour donner une nouvelle vie aux éléments réutilisables. Vous contribuez au bien de la planète en nous permettant de réutiliser les pièces de votre auto usagé."
+    }
+  },
+  "homeSection4": {
+    "offer1": {
+      "condition1": "Jusqu'à",
+      "amount": "1500$",
+      "condition2": "Pour votre auto scrap",
+      "description": "L'offre varie selon le prix courant du métal, le poids et l'état du véhicule."
+    },
+    "offer2": {
+      "condition1": "Jusqu'à",
+      "amount": "3000$",
+      "condition2": "Pour votre auto usagé",
+      "description": "L'agent au téléphone pourra vous donnez une offre, pour votre véhicule usagé, selon les informations de l'état du véhicule que vous allez nous fournir."
+    }
+  },
+  "homeSection5": {
+    "step1": {
+      "title": "Contact",
+      "description": "Appeler nous dès maintenant. Simplement nous fournir la marque du véhicule, le modèle, l'année, l'état du véhicule et la raison que vous voulez recycler le véhicule."
+    },
+    "step2": {
+      "title": "Collect",
+      "description": "Dès que vous acceptez l'offre de l'un de nos agents, nous pourrons envoyer l'un de nos recycleur à votre adresse pour recycler le véhicule et vous remettre votre argent comptant."
+    }
+  },
+  "homeSection6": {
+    "title": "Nous pouvons faire une offre argent sur votre auto seulement si:",
+    "kilometers": {
+      "text": "Il y a maximum ",
+      "bold": "209 000 km ou moins"
+    },
+    "years": {
+      "text": "Il est agé de maximum ",
+      "bold": "12 ans ou moins"
+    },
+    "and": "et"
+  },
+  "mobileMenu": {
+    "link1": "Comment ca marche",
+    "link2": "Vendre mon auto",
+    "link3": "Contact"
+  },
+  "navigation": {
+    "link1": "Comment ca marche",
+    "link2": "Vendre mon auto",
+    "link3": "Contact",
+    "howItWorksId": "comment-ca-fontionne",
+    "howItWorksIdHash": "#comment-ca-fontionne",
+    "sellMyCarId": "vendre-mon-auto",
+    "sellMyCarIdHash": "#vendre-mon-auto",
+    "contactId": "contact",
+    "contactIdHash": "#contact"
+  }
+}
