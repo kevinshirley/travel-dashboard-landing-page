@@ -232,6 +232,7 @@ a {
     background: $home-section-1-cta-bg-color;
     color: $home-section-1-cta-color;
     padding: 0 20px;
+    text-transform: none;
 
     &:hover {
       background: $home-section-1-cta-bg-color-hover;
@@ -759,7 +760,7 @@ a {
 
   .modal-wrapper {
     width: 700px;
-    min-height: 250px;
+    min-height: 350px;
     // height: 100%;
     background: $white;
     margin: 0 auto;

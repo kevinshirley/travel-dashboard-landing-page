@@ -30,7 +30,7 @@ function HomeSection1() {
           </div>
         </div>
         <h5>{i18n.t('homeSection1.ctaSubtitle')}</h5>
-        <ViewDemoCta isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <ViewDemoCta setIsModalOpen={setIsModalOpen} />
       </div>
     </section>
   );

@@ -11,10 +11,10 @@
   "common": {
     "companyPhoneNumber": "514-900-6636",
     "companyPhoneNumberHref": "tel:5149006636",
-    "viewDemo": "View Demo"
+    "viewDemo": "Try Demo"
   },
   "meta": {
-    "title": "We can buy your used car | Auto Turbo",
+    "title": "Efficiently manage interactive itineraries | Trip Imagine",
     "description": "Call us now, we can get you a free quote in under 10 minutes."
   },
   "footer": {
@@ -33,7 +33,7 @@
     "listItem2": "Share itineraries with clients",
     "listItem3": "Video conference with your team",
     "listItem4": "and a lot more",
-    "ctaSubtitle": "Try to effectively build itineraries"
+    "ctaSubtitle": "Effectively build interactive itineraries"
   },
   "homeSection2": {
     "title": "Receive your money quickly",

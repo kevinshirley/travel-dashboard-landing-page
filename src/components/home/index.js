@@ -5,7 +5,7 @@ import HomeSection1 from 'src/components/home/home-section-1';
 function Home() {
   useEffect(() => {
     const { asPath } = Router;
-    console.log({ asPath, Router });
+
     if (asPath == '/' ) {
       Router.push('/en');
     }
