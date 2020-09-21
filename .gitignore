@@ -146,3 +146,5 @@ amplifyxc.config
 # Serverless directories
 .serverless
 .serverless_nextjs
+
+yarn.lock

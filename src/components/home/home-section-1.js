@@ -3,7 +3,6 @@ import Fade from 'react-reveal/Fade';
 import { CHECK_CIRCLE_ICON } from 'src/components/material-ui/icons';
 import { CAR_BREAKDOWN } from 'src/components/common/svg';
 import { ITINERARY_MANAGER_MACBOOK } from 'src/components/common/images';
-import PhoneNumberMainCta from 'src/components/common/phone-number-main-cta';
 import ViewDemoCta from 'src/components/common/view-demo-cta';
 import useI18n from 'src/hooks/use-i18n';
 import { ModalContext } from 'src/context/modal-context-provider';

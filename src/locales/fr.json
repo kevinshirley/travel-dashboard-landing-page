@@ -25,6 +25,7 @@
     "mondayToFridayHours": "07:00 - 21:00",
     "saturdayToSunday": "Samedi au Dimanche",
     "saturdayToSundayHours": "07:00 - 18:00",
+    "copyrightSubtitle": "Propulsé par Softelo",
     "copyright": "© {{ year }} Auto Turbo, Tous Droits Réservés."
   },
   "homeSection1": {

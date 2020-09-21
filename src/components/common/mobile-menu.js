@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import * as R from 'ramda';
 import cx from 'classnames';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
@@ -11,6 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import useI18n from 'src/hooks/use-i18n';
 import Link from 'src/components/common/link';
 import { languages } from 'src/lib/i18n';
+import { ModalContext } from 'src/context/modal-context-provider';
 
 const theme = {
   list: {
@@ -32,6 +33,7 @@ const useStyles = makeStyles({
 function MobileMenu() {
   const i18n = useI18n();
   const classes = useStyles(theme);
+  const [isModalOpen, setIsModalOpen] = useContext(ModalContext);
 
   const mobileMenuClasses = cx({
     [classes.list]: true,
@@ -67,21 +69,12 @@ function MobileMenu() {
       }}
     >
       <List>
-        <a href={i18n.t('navigation.howItWorksIdHash')}>
-          <ListItem button>
-            <ListItemText className='link' primary={i18n.t('mobileMenu.link1')} />
-          </ListItem>
-        </a>
-        <a href={i18n.t('navigation.sellMyCarIdHash')}>
-          <ListItem button>
-            <ListItemText className='link' primary={i18n.t('mobileMenu.link2')} />
-          </ListItem>
-        </a>
-        <a href={i18n.t('navigation.contactIdHash')}>
-          <ListItem button>
-            <ListItemText className='link' primary={i18n.t('mobileMenu.link3')} />
-          </ListItem>
-        </a>
+        <ListItem button onClick={() => setIsModalOpen(true)}>
+          <ListItemText className='link' primary={i18n.t('mobileMenu.link1')} />
+        </ListItem>
+        <ListItem button onClick={() => setIsModalOpen(true)}>
+          <ListItemText className='link' primary={i18n.t('mobileMenu.link2')} />
+        </ListItem>
         <div className='language'>
           {languages.map(lang => (
             <Link href={`/${lang}`}>

@@ -145,21 +145,23 @@ a {
           font-size: 1.2em;
           margin-right: 1.2em;
           color: $navbar-menu-link-color;
+          text-transform: none;
         }
         
         .language-selection {
           margin-right: 1.2em;
           color: $navbar-menu-link-color;
 
-          select {
-            border-bottom: 1px solid $white;
-          }
-
           svg {
             path {
               fill: $navbar-menu-link-color;
             }
           }
+        }
+
+        .MuiInput-underline:before {
+          border-bottom: 1px solid $white;
+          outline: none;
         }
       }
 
@@ -715,6 +717,10 @@ a {
     .link {
       margin-bottom: 15px;
 
+      color: $footer-section-link-color;
+      font-size: 1.7em;
+      cursor: pointer;
+
       a {
         color: $footer-section-link-color;
         font-size: 1.7em;
@@ -740,13 +746,34 @@ a {
   .contact {
     margin-bottom: 30px;
 
-    .phone-number-main-cta {
+    .view-demo-cta {
       font-size: 1.7em;
     }
   }
 
   .language-selection {
     margin-bottom: 30px;
+
+    select {
+      color: $white;
+    }
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  .MuiInput-underline:before {
+    border-bottom: 1px solid $white;
+    outline: none;
+  }
+
+  .copyright {
+    small {
+      color: $white;
+    }
   }
 }
 

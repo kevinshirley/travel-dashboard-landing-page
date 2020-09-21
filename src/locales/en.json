@@ -18,14 +18,15 @@
     "description": "Call us now, we can get you a free quote in under 10 minutes."
   },
   "footer": {
-    "link1": "How it works",
-    "link2": "Sell my car",
+    "link1": "Why Trip Imagine?",
+    "link2": "Try Demo",
     "link3": "Contact",
     "mondayToFriday": "Monday to Friday",
     "mondayToFridayHours": "07:00 - 21:00",
     "saturdayToSunday": "Saturday to Sunday",
     "saturdayToSundayHours": "07:00 - 18:00",
-    "copyright": "© {{ year }} Auto Turbo, All Rights Reserved."
+    "copyrightSubtitle": "Powered by Softelo",
+    "copyright": "© {{ year }} Softelo, All Rights Reserved."
   },
   "homeSection1": {
     "title": "Manage your clients itineraries",
@@ -97,19 +98,21 @@
     "and": "and"
   },
   "mobileMenu": {
-    "link1": "How it works",
-    "link2": "Sell my car",
+    "link1": "Why Trip Imagine?",
+    "link2": "Try Demo",
     "link3": "Contact"
   },
   "navigation": {
-    "link1": "How it works",
-    "link2": "Sell my car",
+    "link1": "Why Trip Imagine?",
+    "link2": "Try Demo",
     "link3": "Contact",
     "howItWorksId": "how-it-works",
     "howItWorksIdHash": "#how-it-works",
     "sellMyCarId": "sell-my-car",
     "sellMyCarIdHash": "#sell-my-car",
     "contactId": "contact",
-    "contactIdHash": "#contact"
+    "contactIdHash": "#contact",
+    "whyTripImagineId": "why",
+    "whyTripImaginehash": "#why"
   }
 }
