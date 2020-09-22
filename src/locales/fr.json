@@ -11,29 +11,30 @@
   "common": {
     "companyPhoneNumber": "514-900-6636",
     "companyPhoneNumberHref": "tel:5149006636",
-    "viewDemo": "View Demo"
+    "viewDemo": "Essayez maintenant"
   },
   "meta": {
     "title": "On achete votre vehicule | Auto Turbo",
     "description": "Appelez-nous maintenant, nous pouvons vous obtenir un devis gratuit en moins de 10 minutes."
   },
   "footer": {
-    "link1": "Comment ca marche",
-    "link2": "Vendre mon auto",
+    "link1": "Pourquoi Trip Imagine?",
+    "link2": "Essayez maintenant",
     "link3": "Contact",
     "mondayToFriday": "Lundi au Vendredi",
     "mondayToFridayHours": "07:00 - 21:00",
     "saturdayToSunday": "Samedi au Dimanche",
     "saturdayToSundayHours": "07:00 - 18:00",
     "copyrightSubtitle": "Propulsé par Softelo",
-    "copyright": "© {{ year }} Auto Turbo, Tous Droits Réservés."
+    "copyright": "© {{ year }} Softelo, Tous Droits Réservés."
   },
   "homeSection1": {
-    "title": "On achète votre véhicule usagé",
-    "listItem1": "Paiement cash le jour même",
-    "listItem2": "Aucun frais de remorquage",
-    "listItem3": "Meilleure offre sur le marché",
-    "ctaSubtitle": "Appelez nous pour recevoir une offre"
+    "title": "Gérez les itinéraires de vos clients",
+    "listItem1": "Créez des itinéraires interactifs",
+    "listItem2": "Partager des itinéraires avec vos clients",
+    "listItem3": "Vidéoconférence avec votre équipe",
+    "listItem4": "et beaucoup plus",
+    "ctaSubtitle": "Créez efficacement des itinéraires interactifs"
   },
   "homeSection2": {
     "title": "Recevez votre argent rapidement",
@@ -97,13 +98,13 @@
     "and": "et"
   },
   "mobileMenu": {
-    "link1": "Comment ca marche",
-    "link2": "Vendre mon auto",
+    "link1": "Pourquoi Trip Imagine?",
+    "link2": "Essayez maintenant",
     "link3": "Contact"
   },
   "navigation": {
-    "link1": "Comment ca marche",
-    "link2": "Vendre mon auto",
+    "link1": "Pourquoi Trip Imagine?",
+    "link2": "Essayez maintenant",
     "link3": "Contact",
     "howItWorksId": "comment-ca-fontionne",
     "howItWorksIdHash": "#comment-ca-fontionne",

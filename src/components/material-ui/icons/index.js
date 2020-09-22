@@ -43,6 +43,7 @@ import CommuteIcon from '@material-ui/icons/Commute';
 import MapIcon from '@material-ui/icons/Map';
 import DirectionsBoatIcon from '@material-ui/icons/DirectionsBoat';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 export const PORTFOLIO_ICON = (
   <BurstModeOutlinedIcon />
@@ -216,4 +217,8 @@ export const BOAT_ICON = (
 
 export const INFO_ICON = (
   <InfoIcon />
+);
+
+export const QUESTION_MARK_ICON = (
+  <HelpOutlineIcon />
 );

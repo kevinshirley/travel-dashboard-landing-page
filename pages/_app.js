@@ -4,17 +4,13 @@ import Navbar from 'src/components/common/navbar';
 import Footer from 'src/components/common/footer';
 import ViewDemoModal from 'src/components/common/view-demo-modal';
 import Fab from '@material-ui/core/Fab';
-import { IPHONE_ICON } from 'src/components/material-ui/icons';
+import { QUESTION_MARK_ICON } from 'src/components/material-ui/icons';
 import I18n from 'src/lib/i18n';
 import { trackPageView } from 'src/utils/google-helpers';
 import Router from 'next/router';
 import { ModalContextProvider } from 'src/context/modal-context-provider';
 
 function Root({ Component, pageProps }) {
-  useEffect(() => {
-    // const { asPath } = Router;
-    // Router.events.on('routeChangeComplete', trackPageView(asPath));
-  });
 
   return (
     <ModalContextProvider>
@@ -27,11 +23,9 @@ function Root({ Component, pageProps }) {
             </div>
             <Footer />
           </Layout>
-          <a href='tel:5149006636'>
-            <Fab aria-label='Call' className='phone-button-fixed'>
-              {IPHONE_ICON}
-            </Fab>
-          </a>
+          <Fab aria-label='Call' className='phone-button-fixed' onClick={() => console.log('modal to schedule call')}>
+            {QUESTION_MARK_ICON}
+          </Fab>
         </div>
         <ViewDemoModal />
       </I18n>
