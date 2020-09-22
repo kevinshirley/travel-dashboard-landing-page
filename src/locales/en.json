@@ -11,7 +11,7 @@
   "common": {
     "companyPhoneNumber": "514-900-6636",
     "companyPhoneNumberHref": "tel:5149006636",
-    "viewDemo": "Try Demo"
+    "viewDemo": "Try it now"
   },
   "meta": {
     "title": "Efficiently manage interactive itineraries | Trip Imagine",
@@ -19,7 +19,7 @@
   },
   "footer": {
     "link1": "Why Trip Imagine?",
-    "link2": "Try Demo",
+    "link2": "Try it now",
     "link3": "Contact",
     "mondayToFriday": "Monday to Friday",
     "mondayToFridayHours": "07:00 - 21:00",
@@ -33,7 +33,7 @@
     "listItem1": "Build interactive itineraries",
     "listItem2": "Share itineraries with clients",
     "listItem3": "Video conference with your team",
-    "listItem4": "and a lot more",
+    "listItem4": "and lots more",
     "ctaSubtitle": "Effectively build interactive itineraries"
   },
   "homeSection2": {
@@ -99,12 +99,12 @@
   },
   "mobileMenu": {
     "link1": "Why Trip Imagine?",
-    "link2": "Try Demo",
+    "link2": "Try it now",
     "link3": "Contact"
   },
   "navigation": {
     "link1": "Why Trip Imagine?",
-    "link2": "Try Demo",
+    "link2": "Try it now",
     "link3": "Contact",
     "howItWorksId": "how-it-works",
     "howItWorksIdHash": "#how-it-works",

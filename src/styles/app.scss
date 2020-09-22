@@ -797,6 +797,10 @@ a {
     justify-content: center;
     overflow-y: auto;
 
+    @media screen and (max-width: 715px) {
+      width: 90%;
+    }
+
     .modal-inner {
       width: 90%;
 
