@@ -4,8 +4,10 @@ import { ModalContext } from 'src/context/modal-context-provider';
 import { CLOSE_ICON } from 'src/components/material-ui/icons';
 import TextField from 'src/components/common/text-field';
 import RoundedButton from 'src/components/material-ui/rounded-button';
+import useI18n from 'src/hooks/use-i18n';
 
 function ViewDemoModal() {
+  const i18n = useI18n();
   const [isModalOpen, setIsModalOpen] = useContext(ModalContext);
 
   return (
@@ -23,7 +25,6 @@ function ViewDemoModal() {
                 <Formik
                   initialValues={{
                     email: '',
-                    confirmEmail: '',
                   }}
                   onSubmit={async values => {
                     try {
@@ -36,13 +37,15 @@ function ViewDemoModal() {
                   {() => (
                     <Form>
                       <div className='inner'>
-                        <h1>Try Trip Imagine for free</h1>
-                        <p>Please enter your email to head over to the demo</p>
-                        <Field name='email' label='Email' component={TextField} />
-                        <Field name='confirmEmail' label='Confirm Email' component={TextField} />
+                        <div className='asset'>
+                          <span class="iconify" data-icon="mdi:airport" data-inline="false"></span>
+                        </div>
+                        <h1>{i18n.t('viewDemoModal.title')}</h1>
+                        <p>{i18n.t('viewDemoModal.description')}</p>
+                        <Field name='email' label={i18n.t('viewDemoModal.emailField')} component={TextField} />
                         <RoundedButton
-                          className='add-trip-cta'
-                          text='Done'
+                          className='view-demo-modal-cta'
+                          text={i18n.t('viewDemoModal.cta')}
                           type='submit'
                         />
                       </div>
