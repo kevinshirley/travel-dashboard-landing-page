@@ -112,5 +112,11 @@
     "sellMyCarIdHash": "#vendre-mon-auto",
     "contactId": "contact",
     "contactIdHash": "#contact"
+  },
+  "viewDemoModal": {
+    "title": "Essayez Trip Imagine sans frais",
+    "description": "Veuillez entrer votre adresse courriel afin que nous puissions vous envoyer un lien vers la version d'essai",
+    "emailField": "Courriel",
+    "cta": "Essayez sans frais"
   }
 }

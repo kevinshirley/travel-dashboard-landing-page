@@ -18,6 +18,7 @@ $black-015: rgba(5, 5, 5, 0.15);
 $link-color: #007bff;
 $yellow-300: #fff176;
 $yellow-500: #ffeb3b;
+$lightcoral: #F08080;
 
 // Component color
 $navbar-bg-color: $blue-1200;
@@ -42,6 +43,7 @@ $footer-section-link-color: $white;
 $phone-button-fixed-bg-color: $blue-800;
 $phone-button-fixed-bg-color-hover: $blue-600;
 $phone-button-fixed-color: $white;
+$view-demo-modal-asset: $lightcoral;
 
 /* Mixins */
 @mixin light-box-shadow {
@@ -823,6 +825,61 @@ a {
               color: $black;
               cursor: pointer;
               font-size: 2.3em;
+            }
+          }
+        }
+      }
+
+      .view-demo-modal {
+        padding-bottom: 50px;
+
+        .inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .asset {
+            svg {
+              width: 220px;
+              height: 220px;
+    
+              path {
+                fill: $view-demo-modal-asset;
+              }
+            }
+          }
+
+          h1, p {
+            text-align: center;
+          }
+
+          h1 {
+            line-height: 35px;
+            margin-bottom: 20px;
+          }
+
+          p {
+            line-height: 20px;
+          }
+
+          .text-field {
+            width: 70%;
+            margin-bottom: 30px;
+            
+            @media screen and (max-width: 515px) {
+              width: 90%;
+            }
+
+            .text-input {
+              width: 100%;
+            }
+          }
+
+          .view-demo-modal-cta {
+            width: 70%;
+
+            @media screen and (max-width: 515px) {
+              width: 90%;
             }
           }
         }

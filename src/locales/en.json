@@ -114,5 +114,11 @@
     "contactIdHash": "#contact",
     "whyTripImagineId": "why",
     "whyTripImaginehash": "#why"
+  },
+  "viewDemoModal": {
+    "title": "Try Trip Imagine for free",
+    "description": "Please enter your email so we can send you a link to the trial",
+    "emailField": "Email",
+    "cta": "Try for free"
   }
 }
