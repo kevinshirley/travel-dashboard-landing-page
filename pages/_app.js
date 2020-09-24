@@ -8,7 +8,7 @@ import { QUESTION_MARK_ICON } from 'src/components/material-ui/icons';
 import I18n from 'src/lib/i18n';
 import { trackPageView } from 'src/utils/google-helpers';
 import Router from 'next/router';
-import { ModalContextProvider } from 'src/context/modal-context-provider';
+import { ModalContextProvider } from 'src/store/context/modal-context-provider';
 
 function Root({ Component, pageProps }) {
 

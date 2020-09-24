@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { Formik, Field, Form } from 'formik';
-import { ModalContext } from 'src/context/modal-context-provider';
+import { ModalContext } from 'src/store/context/modal-context-provider';
 import { CLOSE_ICON } from 'src/components/material-ui/icons';
 import TextField from 'src/components/common/text-field';
 import RoundedButton from 'src/components/material-ui/rounded-button';
 import useI18n from 'src/hooks/use-i18n';
+import { axiosPost } from 'src/utils/fetch';
 
 function ViewDemoModal() {
   const i18n = useI18n();
@@ -22,36 +23,43 @@ function ViewDemoModal() {
                 </div>
               </div>
               <div className='view-demo-modal'>
-                <Formik
-                  initialValues={{
-                    email: '',
-                  }}
-                  onSubmit={async values => {
-                    try {
-                      console.log('submitting email from view demo modal', values);
-                    } catch (err) {
-                      console.log('error from view demo modal');
-                    }
-                  }}
-                >
-                  {() => (
-                    <Form>
-                      <div className='inner'>
-                        <div className='asset'>
-                          <span class="iconify" data-icon="mdi:airport" data-inline="false"></span>
-                        </div>
-                        <h1>{i18n.t('viewDemoModal.title')}</h1>
-                        <p>{i18n.t('viewDemoModal.description')}</p>
-                        <Field name='email' label={i18n.t('viewDemoModal.emailField')} component={TextField} />
-                        <RoundedButton
-                          className='view-demo-modal-cta'
-                          text={i18n.t('viewDemoModal.cta')}
-                          type='submit'
-                        />
+              <Formik
+                initialValues={{
+                  email: '',
+                }}
+                onSubmit={async values => {
+                  try {
+                    console.log({'submitting email from view demo modal': values});
+                    const res = axiosPost('/api/users/free-trial', { email: values.email });
+                    res
+                      .then(data => console.log({ 'returned data': data }));
+                  } catch (err) {
+                    console.log('error from view demo modal', err);
+                  }
+                }}
+              >
+                {() => (
+                  <Form>
+                    <div className='inner'>
+                      <div className='asset'>
+                        <span className="iconify" data-icon="mdi:airport" data-inline="false"></span>
                       </div>
-                    </Form>
-                  )}
-                </Formik>
+                      <h1>{i18n.t('viewDemoModal.title')}</h1>
+                      <p>{i18n.t('viewDemoModal.description')}</p>
+                      <Field
+                        name='email'
+                        label={i18n.t('viewDemoModal.emailField')}
+                        component={TextField}
+                      />
+                      <RoundedButton
+                        className='view-demo-modal-cta'
+                        text={i18n.t('viewDemoModal.cta')}
+                        type='submit'
+                      />
+                    </div>
+                  </Form>
+                )}
+              </Formik>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import useI18n from 'src/hooks/use-i18n';
 import Link from 'src/components/common/link';
 import { languages } from 'src/lib/i18n';
-import { ModalContext } from 'src/context/modal-context-provider';
+import { ModalContext } from 'src/store/context/modal-context-provider';
 
 const theme = {
   list: {

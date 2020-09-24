@@ -12,15 +12,17 @@ app
   .prepare()
   .then(() => {
     const server = express();
-  
+
     // Body parser middleware
     server.use(bodyParser.json());
     server.use(bodyParser.urlencoded({ extended: true }));
 
     // Routes
     const health = require('./routes/health');
+    const users = require('./routes/users');
 
     server.use('/api', health);
+    server.use('/api', users);
 
     server.get('*', (req, res) => {
       return handle(req, res);
