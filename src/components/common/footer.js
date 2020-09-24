@@ -3,7 +3,7 @@ import { TRIP_IMAGINE_WHITE_LOGO } from 'src/components/common/images';
 import useI18n from 'src/hooks/use-i18n';
 import LanguageSelection from 'src/components/common/language-selection';
 import ViewDemoCta from 'src/components/common/view-demo-cta';
-import { ModalContext } from 'src/context/modal-context-provider';
+import { ModalContext } from 'src/store/context/modal-context-provider';
 
 function Footer() {
   const i18n = useI18n();

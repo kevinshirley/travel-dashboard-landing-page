@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import axios from 'axios';
+import qs from 'qs';
 
 export const get = async url => {
   try {
@@ -14,7 +15,7 @@ export const get = async url => {
 export const post = async (url, payload) => {
   try {
     const response = await fetch(url, { 
-      method: 'post',
+      method: 'POST',
       body: JSON.stringify(payload),
       headers: new Headers({
         'accept': 'application/json',
@@ -30,10 +31,35 @@ export const post = async (url, payload) => {
 };
 
 export const axiosPost = async (url, payload) => {
+  const data = qs.stringify(payload);
+
   const response = await axios({
     method: 'POST',
     url: url,
-    data: payload,
+    data,
+    headers: {
+      'accept': 'application/json',
+      'Accept-Language': 'en-US,en;q=0.8',
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  })
+    .then((res) => {
+      return res;
+    })
+    .catch((e) => {
+      console.log('axios error:', e);
+    });
+
+  return response;
+};
+
+export const axiosPostDocument = async (url, payload) => {
+  const data = JSON.stringify(payload);
+
+  const response = await axios({
+    method: 'POST',
+    url: url,
+    data,
     headers: {
       'accept': 'application/json',
       'Accept-Language': 'en-US,en;q=0.8',

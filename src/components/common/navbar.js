@@ -5,7 +5,7 @@ import MobileMenu from 'src/components/common/mobile-menu';
 import LanguageSelection from 'src/components/common/language-selection';
 import Button from 'src/components/material-ui/text-button';
 import useI18n from 'src/hooks/use-i18n';
-import { ModalContext } from 'src/context/modal-context-provider';
+import { ModalContext } from 'src/store/context/modal-context-provider';
 
 function Navbar() {
   const i18n = useI18n();

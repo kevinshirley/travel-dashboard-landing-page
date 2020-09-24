@@ -5,7 +5,7 @@ import { CAR_BREAKDOWN } from 'src/components/common/svg';
 import { ITINERARY_MANAGER_MACBOOK } from 'src/components/common/images';
 import ViewDemoCta from 'src/components/common/view-demo-cta';
 import useI18n from 'src/hooks/use-i18n';
-import { ModalContext } from 'src/context/modal-context-provider';
+import { ModalContext } from 'src/store/context/modal-context-provider';
 
 function HomeSection1() {
   const i18n = useI18n();
