@@ -8,8 +8,7 @@ const express = require('express');
 const router = express.Router();
 const AWS = require('aws-sdk');
 const moment = require('moment');
-const uuidv4 = require('../utils/uuidv4');
-// const { uuid } = require('uuidv4');
+const uuidv4 = require('../../server/utils/uuidv4');
 
 const aws_creds = {
   table_name: 'users',
