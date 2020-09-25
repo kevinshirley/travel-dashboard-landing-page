@@ -1,8 +1,8 @@
 require('dotenv').config();
 const {
-  AWS_ACCESS_KEY_ID, 
-  AWS_SECRET_ACCESS_KEY,
-  AWS_REGION,
+  SOFTELO_AWS_ACCESS_KEY_ID, 
+  SOFTELO_AWS_SECRET_ACCESS_KEY,
+  SOFTELO_AWS_REGION,
 } = process.env;
 const AWS = require('aws-sdk');
 const moment = require('moment');
@@ -11,9 +11,9 @@ const uuidv4 = require('../../../server/utils/uuidv4');
 const aws_creds = {
   table_name: 'users',
   remote_config: {
-    accessKeyId: AWS_ACCESS_KEY_ID,
-    secretAccessKey: AWS_SECRET_ACCESS_KEY,
-    region: AWS_REGION
+    accessKeyId: SOFTELO_AWS_ACCESS_KEY_ID,
+    secretAccessKey: SOFTELO_AWS_SECRET_ACCESS_KEY,
+    region: SOFTELO_AWS_REGION
   }
 };
 
