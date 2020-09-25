@@ -1,13 +1,14 @@
+require('dotenv').config();
+const {
+  AWS_ACCESS_KEY_ID, 
+  AWS_SECRET_ACCESS_KEY,
+  AWS_REGION,
+} = process.env;
+const AWS = require('aws-sdk');
+const moment = require('moment');
+const uuidv4 = require('../../../server/utils/uuidv4');
+
 export default (req, res) => {
-  require('dotenv').config();
-  const {
-    AWS_ACCESS_KEY_ID, 
-    AWS_SECRET_ACCESS_KEY,
-    AWS_REGION,
-  } = process.env;
-  const AWS = require('aws-sdk');
-  const moment = require('moment');
-  const uuidv4 = require('../../../server/utils/uuidv4');
 
   const aws_creds = {
     table_name: 'users',
