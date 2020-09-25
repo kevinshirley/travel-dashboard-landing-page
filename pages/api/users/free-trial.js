@@ -57,6 +57,7 @@ export default (req, res) => {
     return res.send({
       success: true,
       email: data.email,
+      params,
     });
   }
 };
