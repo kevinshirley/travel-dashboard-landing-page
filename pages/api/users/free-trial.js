@@ -45,19 +45,20 @@ export default (req, res) => {
 
     db.put(params, function(err, data) {
       if (err) {
-        console.log('aws error', err);
-        return err;
+        return res.send({
+          success: false,
+          message: err,
+          params,
+          data,
+        });
       }
 
-      console.log('aws success', data);
-
-      return params.Item;
-    });
-
-    return res.send({
-      success: true,
-      email: data.email,
-      params,
+      return res.send({
+        success: true,
+        email: data.email,
+        params,
+        data,
+      });
     });
   }
 };
