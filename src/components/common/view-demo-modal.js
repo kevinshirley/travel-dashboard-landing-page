@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import { ModalContext } from 'src/store/context/modal-context-provider';
 import { CLOSE_ICON } from 'src/components/material-ui/icons';
@@ -6,10 +6,13 @@ import TextField from 'src/components/common/text-field';
 import RoundedButton from 'src/components/material-ui/rounded-button';
 import useI18n from 'src/hooks/use-i18n';
 import { axiosPost } from 'src/utils/fetch';
+import { useToasts } from 'react-toast-notifications';
 
 function ViewDemoModal() {
   const i18n = useI18n();
   const [isModalOpen, setIsModalOpen] = useContext(ModalContext);
+  const [isRequestSuccess, setIsRequestSuccess] = useState(false);
+  const { addToast } = useToasts();
 
   return (
     <>
@@ -29,12 +32,23 @@ function ViewDemoModal() {
                 }}
                 onSubmit={async values => {
                   try {
-                    console.log({'submitting email from view demo modal': values});
-                    const res = axiosPost('/api/users/free-trial', { email: values.email });
-                    res
-                      .then(data => console.log({ 'returned data': data }));
+                    const axios = axiosPost('/api/users/free-trial', { email: values.email });
+
+                    axios
+                      .then(result => {
+                        // setIsRequestSuccess(result.data.success);
+                        setIsModalOpen(false);
+                        addToast('Success! You should receive the free trial link by email shortly.', {
+                          appearance: 'success',
+                          autoDismiss: true,
+                        });
+                        console.log({'results from api in axios': result});
+                      });
                   } catch (err) {
-                    console.log('error from view demo modal', err);
+                    addToast(`Error: ${err}`, {
+                      appearance: 'error',
+                      autoDismiss: true, 
+                    })
                   }
                 }}
               >
