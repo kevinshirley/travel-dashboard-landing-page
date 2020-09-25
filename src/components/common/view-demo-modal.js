@@ -37,7 +37,7 @@ function ViewDemoModal() {
 
                     axios
                       .then(result => {
-                        setIsRequestSuccess(result.data.success);
+                        // setIsRequestSuccess(result.data.success);
                         setIsModalOpen(false);
                         addToast('Success! You should receive the free trial link by email shortly.', {
                           appearance: 'success',
