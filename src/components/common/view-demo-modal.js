@@ -32,7 +32,6 @@ function ViewDemoModal() {
                 }}
                 onSubmit={async values => {
                   try {
-                    console.log({'submitting email from view demo modal': values});
                     const axios = axiosPost('/api/users/free-trial', { email: values.email });
 
                     axios
@@ -43,6 +42,7 @@ function ViewDemoModal() {
                           appearance: 'success',
                           autoDismiss: true,
                         });
+                        console.log({'results from api in axios': result});
                       });
                   } catch (err) {
                     addToast(`Error: ${err}`, {
