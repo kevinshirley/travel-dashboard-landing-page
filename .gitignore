@@ -148,3 +148,4 @@ amplifyxc.config
 .serverless_nextjs
 
 yarn.lock
+sendgrid.env
