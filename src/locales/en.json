@@ -29,7 +29,8 @@
     "copyright": "© Trip Imagine by Softelo, All Rights Reserved."
   },
   "homeSection1": {
-    "title": "Manage your clients itineraries",
+    "title": "Manage your travel needs efficiently",
+    "subtitle": "The TripImagine software has a ton of features, including the ability to:",
     "listItem1": "Build interactive itineraries",
     "listItem2": "Share itineraries with clients",
     "listItem3": "Video conference with your team",
@@ -116,7 +117,7 @@
     "whyTripImaginehash": "#why"
   },
   "viewDemoModal": {
-    "title": "Try Trip Imagine for free",
+    "title": "Try TripImagine for free",
     "description": "Please enter your email so we can send you a link to the trial",
     "emailField": "Email",
     "cta": "Try for free"

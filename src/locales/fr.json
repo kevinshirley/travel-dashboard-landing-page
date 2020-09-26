@@ -29,7 +29,8 @@
     "copyright": "© Trip Imagine par Softelo, Tous Droits Réservés."
   },
   "homeSection1": {
-    "title": "Gérez les itinéraires de vos clients",
+    "title": "Gérez efficacement vos besoins de voyage",
+    "subtitle": "Le logiciel TripImagine a une tonne de fonctionnalités, y compris la possibilité de:",
     "listItem1": "Créez des itinéraires interactifs",
     "listItem2": "Partager des itinéraires avec vos clients",
     "listItem3": "Vidéoconférence avec votre équipe",
@@ -114,7 +115,7 @@
     "contactIdHash": "#contact"
   },
   "viewDemoModal": {
-    "title": "Essayez Trip Imagine sans frais",
+    "title": "Essayez TripImagine sans frais",
     "description": "Veuillez entrer votre adresse courriel afin que nous puissions vous envoyer un lien vers la version d'essai",
     "emailField": "Courriel",
     "cta": "Essayez sans frais"
