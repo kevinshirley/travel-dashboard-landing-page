@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { CHECK_CIRCLE_ICON } from 'src/components/material-ui/icons';
-import { CAR_BREAKDOWN } from 'src/components/common/svg';
-import { ITINERARY_MANAGER_MACBOOK } from 'src/components/common/images';
+import { TRAVEL_DASHBOARD } from 'src/components/common/images';
 import ViewDemoCta from 'src/components/common/view-demo-cta';
 import useI18n from 'src/hooks/use-i18n';
 import { ModalContext } from 'src/store/context/modal-context-provider';
@@ -26,8 +25,7 @@ function HomeSection1() {
             </ul>
           </div>
           <div className='media'>
-            {/* <img src={ITINERARY_MANAGER_MACBOOK} alt={i18n.t('alt.carBreakdown')} /> */}
-            <img src='http://media.tripimagine.com/img/travel-dashboard-example.gif' alt={i18n.t('alt.carBreakdown')} />
+            <img src={TRAVEL_DASHBOARD} alt={i18n.t('alt.carBreakdown')} />
           </div>
         </div>
         <h5>{i18n.t('homeSection1.ctaSubtitle')}</h5>

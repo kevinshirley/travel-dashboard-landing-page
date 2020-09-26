@@ -4,6 +4,7 @@ import itineraryManagerMacbook from 'src/assets/images/itinerary-manager-macbook
 import editingItineraryManagerMacbook from 'src/assets/images/editing-itinerary-manager-macbook.png';
 import tripImagineLogo from 'src/assets/images/trip-imagine-logo-only.png';
 import tripImagineWhiteLogo from 'src/assets/images/trip-imagine-white-logo-only.png';
+import travelDashboard from 'src/assets/images/travel-dashboard-example.gif';
 
 export const KS = ks;
 export const AUTO_TURBO_LOGO = autoTurboLogo;
@@ -11,3 +12,4 @@ export const ITINERARY_MANAGER_MACBOOK = itineraryManagerMacbook;
 export const EDITING_ITINERARY_MANAGER_MACBOOK = editingItineraryManagerMacbook;
 export const TRIP_IMAGINE_LOGO = tripImagineLogo;
 export const TRIP_IMAGINE_WHITE_LOGO = tripImagineWhiteLogo;
+export const TRAVEL_DASHBOARD = travelDashboard;
