@@ -15,6 +15,7 @@ function HomeSection1() {
     <section className="home-section-1">
       <div className="inner">
         <h1>{i18n.t('homeSection1.title')}</h1>
+        <h3>{i18n.t('homeSection1.subtitle')}</h3>
         <div className='details'>
           <div className='list'>
             <ul>
@@ -25,7 +26,8 @@ function HomeSection1() {
             </ul>
           </div>
           <div className='media'>
-            <img src={ITINERARY_MANAGER_MACBOOK} alt={i18n.t('alt.carBreakdown')} />
+            {/* <img src={ITINERARY_MANAGER_MACBOOK} alt={i18n.t('alt.carBreakdown')} /> */}
+            <img src='http://media.tripimagine.com/img/travel-dashboard-example.gif' alt={i18n.t('alt.carBreakdown')} />
           </div>
         </div>
         <h5>{i18n.t('homeSection1.ctaSubtitle')}</h5>
