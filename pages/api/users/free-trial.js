@@ -5,6 +5,7 @@ const {
   SOFTELO_AWS_REGION,
 } = process.env;
 const AWS = require('aws-sdk');
+const { isNil } = require('ramda');
 const moment = require('moment');
 const uuidv4 = require('../../../server/utils/uuidv4');
 const sendGrid = require('../../../src/utils/send-grid');
@@ -19,9 +20,9 @@ const aws_creds = {
 };
 
 const selectLanguage = referrer => {
+  if (isNil(referrer)) return '';
   if (referrer.indexOf('/fr') > 0) return 'FR';
   if (referrer.indexOf('/en') > 0) return 'EN';
-  return null;
 };
 
 export default (req, res) => {

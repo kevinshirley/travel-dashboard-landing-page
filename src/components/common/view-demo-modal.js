@@ -40,15 +40,19 @@ function ViewDemoModal() {
                         setIsModalOpen(false);
                         addToast('Success! You should receive the free trial link by email shortly.', {
                           appearance: 'success',
-                          autoDismiss: true,
+                          autoDismiss: false,
                         });
                         console.log({'results from api in axios': result});
+                      })
+                      .catch((e) => {
+                        console.log('axios error:', e);
                       });
                   } catch (err) {
                     addToast(`Error: ${err}`, {
                       appearance: 'error',
                       autoDismiss: true, 
-                    })
+                    });
+                    console.log({ err });
                   }
                 }}
               >

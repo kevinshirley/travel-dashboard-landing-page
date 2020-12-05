@@ -75,4 +75,3 @@ export const axiosPostDocument = async (url, payload) => {
 
   return response;
 };
-

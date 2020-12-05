@@ -15,4 +15,4 @@ const sendGrid = ({ to, from, subject, text, html }) => {
   sgMail.send(msg);
 };
 
-export default sendGrid;
+module.exports = sendGrid;

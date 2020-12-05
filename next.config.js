@@ -23,10 +23,16 @@ module.exports = withVideos(
               {
                 source: '/',
                 permanent: true,
-                destination: '/fr',
+                destination: '/en',
               },
             ]
           },
+        },
+        env: {
+          SOFTELO_AWS_ACCESS_KEY_ID: process.env.SOFTELO_AWS_ACCESS_KEY_ID,
+          SOFTELO_AWS_SECRET_ACCESS_KEY: process.env.SOFTELO_AWS_SECRET_ACCESS_KEY,
+          SOFTELO_AWS_REGION: process.env.SOFTELO_AWS_REGION,
+          SOFTELO_TRIP_SEND_GRID_KEY_ID: process.env.SOFTELO_TRIP_SEND_GRID_KEY_ID,
         },
       }),
     ),
